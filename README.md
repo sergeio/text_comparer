@@ -4,6 +4,9 @@ Text Comparer
 Uses cosine similarity to give a numerical evaluation of the similarity of two
 texts (0 to 1).
 
+This code has a companion blog-post here:
+http://engineering.aweber.com/cosine-similarity/
+
 Sample Usage
 ------------
 ```python
