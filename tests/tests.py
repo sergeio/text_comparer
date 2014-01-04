@@ -1,7 +1,7 @@
 from unittest import TestCase, main
 
-from similarity import dot_product, magnitude, similarity
-from vectorizer import (
+from text_comparer.similarity import dot_product, magnitude, similarity
+from text_comparer.vectorizer import (
     compare_texts,
     compare_vectors,
     vectorize_text,

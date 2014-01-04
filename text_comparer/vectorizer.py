@@ -1,7 +1,7 @@
 from collections import defaultdict
 import re
 
-from similarity import similarity
+from text_comparer.similarity import similarity
 
 
 def word_frequencies(word_vector):
