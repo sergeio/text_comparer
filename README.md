@@ -12,12 +12,17 @@ Sample Usage
 ```python
 In [1]: from vectorizer import compare_texts
 
-In [2]: compare_texts('Mary had a little shotgun.', 'Mary loves her shotgun')
-Out[2]: 0.66666666666666663
+In [2]: compare_texts('Two identical sentences', 'Two identical sentences')
+Out[2]: 1.0
 
-In [3]: compare_texts('John loves Mary.', 'But Mary has a shotgun.')
-Out[3]: 0.33333333333333331
+In [3]: compare_texts('Two similar sentences', 'Two non-identical sentences')
+Out[3]: 0.6666666666666666
+
+In [4]: compare_texts('Two radically different sentences',
+                      'This statement shares no words with the previous one')
+Out[4]: 0.0
 ```
 
-The higher score in `2` implies that the first two sentences are more similar
-than the second two.  A classic tale of the love-linked-list.
+The higher the output of `compare_texts`, the higher the percentage of shared
+words between sentences.  That description is a simplification of the actual
+algorithm, but it's pretty close to truth.
